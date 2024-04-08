@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png">
+    <title>IProgramador</title>
+    <style>
+      body{
+        background-color: rgb(0, 0, 0);
+        font-family: "Poppins";
+        color: rgb(255, 255, 255);
+      }
+      .logo{
+        width: 50px;
+        height: 50px;
+      }
+      a{
+        color:aliceblue !important; 
+        text-decoration: none;
+      }
+      .dropdown-menu{
+        background-color: rgb(0, 0, 0, 0.486);        
+      }
+      .dropdown-item:hover{
+        background-color: rgb(247, 206, 24);
+      }
+      .container{
+        margin: auto;
+      }
+      h2{
+        color: rgb(247, 206, 24);
+      }
+      .condicao{
+        width: 600px;
+        height: 330px;
+        border-radius: 20px;
+      }
+      .proximo{
+        text-align: center;
+        background-color: rgb(247, 206, 24);
+        border-radius: 20px;
+        width: 17%;
+        margin: auto;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(0, 0, 0, 0.486); ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html"><img class="logo" src="img/logo.png" alt="logo-JavaScript"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="introducao.html">Introdução</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="exercicios.html">Exercícios</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> JavaScript </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="tutoriais.html">Iniciando</a></li>
+                  <li><a class="dropdown-item" href="variaveis.html">Variáveis</a></li>
+                  <li><a class="dropdown-item" href="operadores.html">Operadores</a></li>
+                  <li><a class="dropdown-item" href="exibir.html">Mensagens</a></li>
+                  <li><a class="dropdown-item" href="estruturaC.html">Estruturas Condicionais</a></li>
+                  <li><a class="dropdown-item" href="estruturaR.html">Estruturas de Repetição</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container">
+      <h2>Explorando Estruturas de Repetição em JavaScript</h2>
+      <br>
+      <h3>O que são Estruturas de Repetição?</h3>
+     <br>
+     <p>As estruturas de repetição permitem que você execute um bloco de código várias vezes. Elas são úteis 
+     quando você precisa realizar a mesma tarefa repetidamente sem escrever o mesmo código várias vezes. Em 
+     JavaScript, existem várias maneiras de implementar estruturas de repetição.</p> 
+     <br><br>
+     <h3>1. Loop While</h3>
+     <br>
+     <p>O loop while executa um bloco de código enquanto uma condição especificada for verdadeira.</p>      
+     <br>
+     <img class="condicao" src="img/repet1.png" alt="estrutura-repeticao">
+     <br><br>
+     <h3>2. Loop Do-While</h3>
+     <br>
+     <p>O loop do-while executa um bloco de código pelo menos uma vez e depois repete o bloco enquanto 
+     uma condição especificada for verdadeira.</p>      
+     <br>
+     <img class="condicao" src="img/repet2.png" alt="estrutura-repeticao">
+     <br><br>
+     <h3>3. Loop For</h3>
+     <br>
+     <p>O loop for é usado para iterar sobre uma sequência de valores.</p>      
+     <br>
+     <img class="condicao" src="img/repet3.png" alt="estrutura-repeticao">
+     <br><br>
+     <p>As estruturas de repetição são ferramentas poderosas em JavaScript para executar tarefas repetitivas 
+     de forma eficiente. Com while, do-while, for, você pode escolher a estrutura de repetição 
+     mais adequada para a sua situação. Pratique essas estruturas em seus próprios projetos para se tornar mais 
+     confortável com a iteração em JavaScript!</p>
+    </div>
+    <br>
+    <div class="proximo">
+      <a href="exercicios.html" >
+        <h1 >Praticar ></h1>
+      </a> 
+    </div>
+    <br>
+</body>

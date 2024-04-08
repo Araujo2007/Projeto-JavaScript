@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png">
+    <title>IProgramador</title>
+    <style>
+      body{
+        background-color: rgb(0, 0, 0);
+        font-family: "Poppins";
+        color: rgb(255, 255, 255);
+      }
+      .logo{
+        width: 50px;
+        height: 50px;
+      }
+      a{
+        color:aliceblue !important; 
+        text-decoration: none;
+      }
+      .dropdown-menu{
+        background-color: rgb(0, 0, 0, 0.486);        
+      }
+      .dropdown-item:hover{
+        background-color: rgb(247, 206, 24);
+      }
+      .container{
+        margin: auto;
+      }
+      h2{
+        color: rgb(247, 206, 24);
+      }
+      .visual{
+        color: blue;
+      }
+      hr{
+        color: rgb(247, 206, 24);
+      }
+      .link{
+        color: blue !important;
+      }
+      .tutoriais{
+        width: 650px;
+        height: 450px;
+        border-radius: 20px;
+      }
+      .center{
+        text-align: center;
+      }
+      .proximo{
+        text-align: center;
+        background-color: rgb(247, 206, 24);
+        border-radius: 20px;
+        width: 17%;
+        margin: auto;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(0, 0, 0, 0.486); ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html"><img class="logo" src="img/logo.png" alt="logo-JavaScript"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="introducao.html">Introdução</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="exercicios.html">Exercícios</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> JavaScript </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="tutoriais.html">Iniciando</a></li>
+                  <li><a class="dropdown-item" href="variaveis.html">Variáveis</a></li>
+                  <li><a class="dropdown-item" href="operadores.html">Operadores</a></li>
+                  <li><a class="dropdown-item" href="exibir.html">Mensagens</a></li>
+                  <li><a class="dropdown-item" href="estruturaC.html">Estruturas Condicionais</a></li>
+                  <li><a class="dropdown-item" href="estruturaR.html">Estruturas de Repetição</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container">
+      <h2>Iniciando em JavaScript</h2>
+      <br>
+      <h3>Baixando a Ferramenta: <b class="visual">Visual Studio Code</b></h3>
+      <br>
+      <p>Acesse o link: <b><a class="link" href="http://code.visualstudio.com/Download"> >> Baixar  </a></b></p>
+      <br><hr><br>
+     <div class="center">
+      <p>1. Ao entrar no site escolha a opção do seu dispositivo e inicie o download:</p>
+      <img class="tutoriais" src="img/tutorial1.png" alt="tutorial1">
+      <br><br><hr><br>
+      <p>2. Ao ler e aceitar os termos avance:</p>
+      <img class="tutoriais" src="img/tutorial2.png" alt="tutorial2">
+      <br><br><hr><br>
+      <p>3. Selecione a pasta desejada para armazenar os dados da erramenta:</p>
+      <img class="tutoriais" src="img/tutorial3.png" alt="tutorial3">
+      <br><br><hr><br>
+      <p>4. Selecione a pasta para atalho do programa:</p>
+      <img class="tutoriais" src="img/tutorial4.png" alt="tutorial4">
+      <br><br><hr><br>
+      <p>5. Selecione as tarefas adicionais desejadas:</p>
+      <img class="tutoriais" src="img/tutorial5.png" alt="tutorial5">
+      <br><br><hr><br>
+      <p>6. Se tudo estiver certo, inicie a instalação:</p>
+      <img class="tutoriais" src="img/tutorial6.png" alt="tutorial6">
+      <br><br><hr><br>
+      <p>7. Após terminar a instalação, com o programa já aberto, vá até extensões:</p>
+      <img class="tutoriais" src="img/tutorial7.png" alt="tutorial7">
+      <br><br><hr><br>
+      <p>8. Procure pela extensão "Portuguese", caso queira a tradução da ferramenta:</p>
+      <img class="tutoriais" src="img/tutorial8.png" alt="tutorial8">
+      <br><br><hr><br>
+      <p>9. Abra a aba de arquivos:</p>
+      <img class="tutoriais" src="img/tutorial9.png" alt="tutorial9">
+      <br><br><hr><br>
+      <p>10. Abra ou crie uma pasta para seu arquivo JavaScript com nome "nomeEscolhido.js" (evite espaços e caracteres especiais):</p>
+      <img class="tutoriais" src="img/tutorial10.png" alt="tutorial10">
+      <br><br><hr><br>
+     </div>
+    </div>
+    <div class="proximo">
+      <a href="variaveis.html" >
+        <h1 >Avançar ></h1>
+      </a> 
+    </div>
+</body>

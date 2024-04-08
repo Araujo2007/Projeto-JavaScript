@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png">
+    <title>IProgramador</title>
+    <style>
+      body{
+        background-color: rgb(0, 0, 0);
+        font-family: "Poppins";
+        color: rgb(255, 255, 255);
+      }
+      .logo{
+        width: 50px;
+        height: 50px;
+      }
+      a{
+        color:aliceblue !important; 
+        text-decoration: none;
+      }
+      .dropdown-menu{
+        background-color: rgb(0, 0, 0, 0.486);        
+      }
+      .dropdown-item:hover{
+        background-color: rgb(247, 206, 24);
+      }
+      .container{
+        margin: auto;
+      }
+      h2{
+        color: rgb(247, 206, 24);
+      }
+      .msgs{
+        width: 600px;
+        height: 330px;
+        border-radius: 20px;
+      }
+      .proximo{
+        text-align: center;
+        background-color: rgb(247, 206, 24);
+        border-radius: 20px;
+        width: 17%;
+        margin: auto;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(0, 0, 0, 0.486); ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html"><img class="logo" src="img/logo.png" alt="logo-JavaScript"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="introducao.html">Introdução</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="exercicios.html">Exercícios</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> JavaScript </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="tutoriais.html">Iniciando</a></li>
+                  <li><a class="dropdown-item" href="variaveis.html">Variáveis</a></li>
+                  <li><a class="dropdown-item" href="operadores.html">Operadores</a></li>
+                  <li><a class="dropdown-item" href="exibir.html">Mensagens</a></li>
+                  <li><a class="dropdown-item" href="estruturaC.html">Estruturas Condicionais</a></li>
+                  <li><a class="dropdown-item" href="estruturaR.html">Estruturas de Repetição</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container">
+      <h2>Exibindo Mensagens para o Usuário em JavaScript: Um Guia para Iniciantes</h2>
+      <br>
+      <h3>1. Por que Exibir Mensagens?</h3>
+     <br>
+     <p>Exibir mensagens para o usuário é uma parte essencial da interação em JavaScript. 
+     Isso permite que você forneça feedback, solicite informações e informe o usuário sobre o 
+     que está acontecendo em seu aplicativo ou página da web.</p> 
+     <br><br>
+     <h3>2. Métodos para Exibir Mensagens:</h3>
+     <br>
+     <p>Existem várias maneiras de exibir mensagens para o usuário em JavaScript. Aqui estão três 
+     métodos comuns:</p>      
+     <br>
+     <ul>
+      <li><b>Alerta (alert()):</b> Exibe uma caixa de diálogo com uma mensagem para o usuário e um botão "OK" para fechar a caixa.</li>
+      <br>
+      <img class="msgs" src="img/msg1.png" alt="mensagem">
+      <br><br><br>
+      <li><b>Confirmação (confirm()):</b> Exibe uma caixa de diálogo com uma mensagem e botões "OK" e "Cancelar". Útil para obter a confirmação do usuário.</li>
+      <br>
+      <img class="msgs" src="img/msg2.png" alt="mensagem">
+      <br><br><br>
+      <li><b>Console (console.log()):</b> Exibe mensagens no console do navegador, usado principalmente para depuração e registro de informações.</li>
+      <br>
+      <img class="msgs" src="img/log1.png" alt="mensagem">
+      <br><br><br>
+     </ul>
+     <ul>
+      <h3>3. Exemplos de Uso:</h3>
+     <br>
+      <li><b>Alerta Simples</b></li>
+      <br>
+      <img class="msgs" src="img/msg4.png" alt="mensagem">
+      <br><br><br>
+      <li><b>Confirmação:</b></li>
+      <br>
+      <img class="msgs" src="img/msg5.png" alt="mensagem">
+      <br><br><br>
+      <li><b>Registro no Console:</b></li>
+      <br>
+      <img class="msgs" src="img/log2.png" alt="mensagem">
+      <br><br><br>
+     </ul>
+     <p>Exibir mensagens para o usuário é uma habilidade importante em JavaScript. 
+     Com os métodos alert() e confirm(), você pode interagir com os usuários 
+     de maneira eficaz, fornecendo informações importantes. Além disso, o console.log() é uma ferramenta valiosa para depurar seu 
+     código e registrar informações úteis durante o desenvolvimento. Experimente esses 
+     métodos em seus próprios projetos para melhorar a experiência do usuário e facilitar 
+     o processo de desenvolvimento!</p>
+    </div>
+    <br>
+    <div class="proximo">
+      <a href="estruturaC.html" >
+        <h1 >Avançar ></h1>
+      </a> 
+    </div>
+    <br>
+</body>
